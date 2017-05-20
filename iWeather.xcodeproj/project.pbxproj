@@ -8,16 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		C653EB601ECF9E6D00E45157 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653EB5F1ECF9E6D00E45157 /* AppDelegate.swift */; };
-		C653EB621ECF9E6D00E45157 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653EB611ECF9E6D00E45157 /* ViewController.swift */; };
+		C653EB621ECF9E6D00E45157 /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653EB611ECF9E6D00E45157 /* WeatherVC.swift */; };
 		C653EB651ECF9E6D00E45157 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C653EB631ECF9E6D00E45157 /* Main.storyboard */; };
 		C653EB671ECF9E6D00E45157 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C653EB661ECF9E6D00E45157 /* Assets.xcassets */; };
 		C653EB6A1ECF9E6D00E45157 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C653EB681ECF9E6D00E45157 /* LaunchScreen.storyboard */; };
+		E4DB24A4D25262C8B014668E /* Pods_iWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E4C4B0E32985676673B76E /* Pods_iWeather.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10E4C4B0E32985676673B76E /* Pods_iWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3123EB350AAA0061A23A4625 /* Pods-iWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-iWeather/Pods-iWeather.release.xcconfig"; sourceTree = "<group>"; };
+		69009FAD9694EE45DA30DD7D /* Pods-iWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iWeather/Pods-iWeather.debug.xcconfig"; sourceTree = "<group>"; };
 		C653EB5C1ECF9E6D00E45157 /* iWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C653EB5F1ECF9E6D00E45157 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C653EB611ECF9E6D00E45157 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C653EB611ECF9E6D00E45157 /* WeatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVC.swift; sourceTree = "<group>"; };
 		C653EB641ECF9E6D00E45157 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C653EB661ECF9E6D00E45157 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C653EB691ECF9E6D00E45157 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4DB24A4D25262C8B014668E /* Pods_iWeather.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89DEA561851B39AC2EF55984 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69009FAD9694EE45DA30DD7D /* Pods-iWeather.debug.xcconfig */,
+				3123EB350AAA0061A23A4625 /* Pods-iWeather.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B774D33C9F290DF6FF86A841 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10E4C4B0E32985676673B76E /* Pods_iWeather.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C653EB531ECF9E6D00E45157 = {
 			isa = PBXGroup;
 			children = (
 				C653EB5E1ECF9E6D00E45157 /* iWeather */,
 				C653EB5D1ECF9E6D00E45157 /* Products */,
+				89DEA561851B39AC2EF55984 /* Pods */,
+				B774D33C9F290DF6FF86A841 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,7 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				C653EB5F1ECF9E6D00E45157 /* AppDelegate.swift */,
-				C653EB611ECF9E6D00E45157 /* ViewController.swift */,
+				C653EB611ECF9E6D00E45157 /* WeatherVC.swift */,
 				C653EB631ECF9E6D00E45157 /* Main.storyboard */,
 				C653EB661ECF9E6D00E45157 /* Assets.xcassets */,
 				C653EB681ECF9E6D00E45157 /* LaunchScreen.storyboard */,
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C653EB6E1ECF9E6D00E45157 /* Build configuration list for PBXNativeTarget "iWeather" */;
 			buildPhases = (
+				3BEA8A5F4DB68D37BB6889BB /* [CP] Check Pods Manifest.lock */,
 				C653EB581ECF9E6D00E45157 /* Sources */,
 				C653EB591ECF9E6D00E45157 /* Frameworks */,
 				C653EB5A1ECF9E6D00E45157 /* Resources */,
+				E6C07CB4895F83CA097F4031 /* [CP] Embed Pods Frameworks */,
+				DA2F7CE58229DCC3958A8FE4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,12 +159,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3BEA8A5F4DB68D37BB6889BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DA2F7CE58229DCC3958A8FE4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iWeather/Pods-iWeather-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6C07CB4895F83CA097F4031 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iWeather/Pods-iWeather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C653EB581ECF9E6D00E45157 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C653EB621ECF9E6D00E45157 /* ViewController.swift in Sources */,
+				C653EB621ECF9E6D00E45157 /* WeatherVC.swift in Sources */,
 				C653EB601ECF9E6D00E45157 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +334,7 @@
 		};
 		C653EB6F1ECF9E6D00E45157 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69009FAD9694EE45DA30DD7D /* Pods-iWeather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TVW3BWZ2VA;
@@ -272,6 +348,7 @@
 		};
 		C653EB701ECF9E6D00E45157 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3123EB350AAA0061A23A4625 /* Pods-iWeather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TVW3BWZ2VA;
@@ -302,6 +379,7 @@
 				C653EB701ECF9E6D00E45157 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
