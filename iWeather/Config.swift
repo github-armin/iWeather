@@ -9,6 +9,8 @@
 import Foundation
 
 var BASE_URL:String = "http://api.openweathermap.org/data/2.5/weather?"
+var FORECAST_URL:String = "http://api.openweathermap.org/data/2.5/forecast/daily?"
+var FORECAST_COUNT = 10
 var API_KEY:String = "792695abf97df65fb1bfdc16754caa76"
 
 typealias DownloadComplete = ()->()
@@ -17,4 +19,6 @@ func parseWeatherURL(lat:String, lng:String) -> String {
     return "\(BASE_URL)lat=\(lat)&lon=\(lng)&appid=\(API_KEY)"
 }
 
-var WEATHER_URL = "\(BASE_URL)lat=29.7604&lon=95.3698&appid=\(API_KEY)"
+func parseForecastURL(lat:String, lng:String) -> String {
+    return "\(FORECAST_URL)lat=\(lat)&lon=\(lng)&cnt=\(FORECAST_COUNT)&appid=\(API_KEY)"
+}
