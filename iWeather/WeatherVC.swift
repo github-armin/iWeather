@@ -47,7 +47,7 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
         
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestWhenInUseAuthorization()
+        //locationManager.requestWhenInUseAuthorization()
         locationManager.startMonitoringSignificantLocationChanges()
         
         //forecast = Forecast()
