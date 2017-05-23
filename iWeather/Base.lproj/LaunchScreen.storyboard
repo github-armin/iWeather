@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,12 +20,53 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIq-fI-CFM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iWeather" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75o-WR-hK6">
+                                        <rect key="frame" x="8" y="314" width="359" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="lw5-ov-pBK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="26"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clouds" translatesAutoresizingMaskIntoConstraints="NO" id="iFq-mp-DBK">
+                                        <rect key="frame" x="150" y="239" width="75" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="UTZ-6p-YGH"/>
+                                            <constraint firstAttribute="height" constant="75" id="XuJ-Cu-ihV"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.32281106710000002" green="0.6403329968" blue="0.98601573710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="75o-WR-hK6" firstAttribute="centerY" secondItem="LIq-fI-CFM" secondAttribute="centerY" id="2ao-QX-yXi"/>
+                                    <constraint firstItem="75o-WR-hK6" firstAttribute="top" secondItem="iFq-mp-DBK" secondAttribute="bottom" id="7W1-a1-eFh"/>
+                                    <constraint firstAttribute="trailing" secondItem="75o-WR-hK6" secondAttribute="trailing" constant="8" id="9Rf-Au-BZZ"/>
+                                    <constraint firstItem="75o-WR-hK6" firstAttribute="leading" secondItem="LIq-fI-CFM" secondAttribute="leading" constant="8" id="BPQ-E1-JyJ"/>
+                                    <constraint firstItem="iFq-mp-DBK" firstAttribute="centerX" secondItem="LIq-fI-CFM" secondAttribute="centerX" id="HSZ-8a-NHR"/>
+                                    <constraint firstItem="75o-WR-hK6" firstAttribute="centerX" secondItem="LIq-fI-CFM" secondAttribute="centerX" id="NeJ-co-Azy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LIq-fI-CFM" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="i6v-8S-V3p"/>
+                            <constraint firstItem="LIq-fI-CFM" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="lHa-rb-el6"/>
+                            <constraint firstAttribute="trailing" secondItem="LIq-fI-CFM" secondAttribute="trailing" id="qxA-8W-Zgw"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="LIq-fI-CFM" secondAttribute="bottom" id="vmX-xC-hwT"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Clouds" width="92" height="68"/>
+    </resources>
 </document>

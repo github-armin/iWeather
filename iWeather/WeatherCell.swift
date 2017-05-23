@@ -21,7 +21,7 @@ class WeatherCell: UITableViewCell {
         highTemp.text = "\(forecast.highTemp)"
         weatherType.text = forecast.weatherType
         dayLbl.text = forecast.date
-        weatherIconImg.image = UIImage(named: forecast.weatherType)
+        weatherIconImg.image = UIImage(named: "\(forecast.weatherType) Mini")
     }
 
 }
