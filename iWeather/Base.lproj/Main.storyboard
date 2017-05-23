@@ -163,15 +163,49 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gaS-D3-LjW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iWeather" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tck-4u-imM">
+                                        <rect key="frame" x="8" y="314" width="359" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="nMs-KO-JOM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="26"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clouds" translatesAutoresizingMaskIntoConstraints="NO" id="rFz-w2-uqf">
+                                        <rect key="frame" x="150" y="239" width="75" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="kY6-ai-xve"/>
+                                            <constraint firstAttribute="width" constant="75" id="vtP-tj-ZX6"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.32281106710000002" green="0.6403329968" blue="0.98601573710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tck-4u-imM" secondAttribute="trailing" constant="8" id="ATp-g0-kDD"/>
+                                    <constraint firstItem="tck-4u-imM" firstAttribute="centerX" secondItem="gaS-D3-LjW" secondAttribute="centerX" id="Hvm-wM-LR6"/>
+                                    <constraint firstItem="tck-4u-imM" firstAttribute="centerY" secondItem="gaS-D3-LjW" secondAttribute="centerY" id="OLH-zv-gtx"/>
+                                    <constraint firstItem="tck-4u-imM" firstAttribute="leading" secondItem="gaS-D3-LjW" secondAttribute="leading" constant="8" id="OmV-ey-5b1"/>
+                                    <constraint firstItem="tck-4u-imM" firstAttribute="top" secondItem="rFz-w2-uqf" secondAttribute="bottom" id="eFd-gI-P5w"/>
+                                    <constraint firstItem="rFz-w2-uqf" firstAttribute="centerX" secondItem="gaS-D3-LjW" secondAttribute="centerX" id="p25-LA-pce"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Ayu-zL-UWf" secondAttribute="trailing" id="7eS-mr-WhA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gaS-D3-LjW" secondAttribute="bottom" id="8FX-0G-qqA"/>
+                            <constraint firstItem="gaS-D3-LjW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="CYW-L4-fCd"/>
+                            <constraint firstAttribute="trailing" secondItem="gaS-D3-LjW" secondAttribute="trailing" id="ZsF-z9-ENP"/>
                             <constraint firstItem="cod-ip-SlE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="c3O-iW-lHY"/>
                             <constraint firstItem="cod-ip-SlE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="iqP-jL-LTA"/>
                             <constraint firstItem="Ayu-zL-UWf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kDY-8v-t4x"/>
                             <constraint firstAttribute="trailing" secondItem="cod-ip-SlE" secondAttribute="trailing" id="kX5-JJ-1Fu"/>
                             <constraint firstItem="Ayu-zL-UWf" firstAttribute="top" secondItem="cod-ip-SlE" secondAttribute="bottom" id="ldb-sR-85h"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ayu-zL-UWf" secondAttribute="bottom" id="ubW-bW-nWb"/>
+                            <constraint firstItem="gaS-D3-LjW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wbe-hy-6fu"/>
                         </constraints>
                     </view>
                     <connections>
@@ -188,4 +222,7 @@
             <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Clouds" width="92" height="68"/>
+    </resources>
 </document>

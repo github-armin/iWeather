@@ -1,12 +1,15 @@
 PODS:
   - Alamofire (4.4.0)
+  - EasyAnimation (1.1.2)
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
+  - EasyAnimation
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  EasyAnimation: a783bc4d33a731cc0857d3db85698a765fc195b2
 
-PODFILE CHECKSUM: 96f7c08047bb79eae7d1e138ba2dbbebadac434e
+PODFILE CHECKSUM: 0ed587133715a6b79f820ed7d6017dfd1f9fba52
 
 COCOAPODS: 1.2.1

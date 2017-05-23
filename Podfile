@@ -7,5 +7,6 @@ target 'iWeather' do
 
   # Pods for iWeather
   pod 'Alamofire', '~> 4.4'
+  pod 'EasyAnimation'
 
 end
