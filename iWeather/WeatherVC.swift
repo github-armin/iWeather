@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import EasyAnimation
 
 class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -23,6 +24,12 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var currentWeatherImage: UIImageView!
     
     @IBOutlet weak var tableView: UITableView!
+    
+    //Launchscreen Outlets
+    @IBOutlet weak var launchScreenImage: UIImageView!
+    @IBOutlet weak var launchScreenLbl: UILabel!
+    @IBOutlet weak var launchScreenBG: UIView!
+    
     
     var currentWeather:CurrentWeather!
     var forecast:Forecast!
@@ -40,6 +47,11 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         currentWeather.downloadWeatherDetails {
             self.downloadForecastData {
                 self.updateMainUI()
+                
+                UIView.animate(withDuration: 0.3, animations: {
+                    self.launchScreenBG.alpha = 0
+                })
+
             }
             
         }

@@ -212,6 +212,9 @@
                         <outlet property="currentTempLbl" destination="VLx-Nh-UAv" id="0Ib-Vv-N3k"/>
                         <outlet property="currentWeatherImage" destination="XYF-M1-NaS" id="jgv-hU-YcN"/>
                         <outlet property="currentWeatherLbl" destination="ehp-Ls-8nR" id="52c-hS-PjC"/>
+                        <outlet property="launchScreenBG" destination="gaS-D3-LjW" id="45s-1G-M0R"/>
+                        <outlet property="launchScreenImage" destination="rFz-w2-uqf" id="k8T-Nn-ukk"/>
+                        <outlet property="launchScreenLbl" destination="tck-4u-imM" id="9aa-Ji-edG"/>
                         <outlet property="locationLbl" destination="Hsv-ca-YHd" id="Snb-Eb-ccR"/>
                         <outlet property="tableView" destination="Ayu-zL-UWf" id="sfY-oB-EOh"/>
                         <outlet property="todayDateLbl" destination="m0O-JF-rYj" id="fda-DM-LY1"/>
