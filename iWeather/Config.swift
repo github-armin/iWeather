@@ -16,9 +16,11 @@ var API_KEY:String = "792695abf97df65fb1bfdc16754caa76"
 typealias DownloadComplete = ()->()
 
 func parseWeatherURL(lat:String, lng:String) -> String {
+    print("CurrentWeatherURL: \(BASE_URL)lat=\(lat)&lon=\(lng)&appid=\(API_KEY)")
     return "\(BASE_URL)lat=\(lat)&lon=\(lng)&appid=\(API_KEY)"
 }
 
 func parseForecastURL(lat:String, lng:String) -> String {
+    print("ForecastWeatherURL: \(FORECAST_URL)lat=\(lat)&lon=\(lng)&cnt=\(FORECAST_COUNT)&appid=\(API_KEY)")
     return "\(FORECAST_URL)lat=\(lat)&lon=\(lng)&cnt=\(FORECAST_COUNT)&appid=\(API_KEY)"
 }

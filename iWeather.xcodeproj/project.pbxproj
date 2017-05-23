@@ -17,6 +17,7 @@
 		C653EB6A1ECF9E6D00E45157 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C653EB681ECF9E6D00E45157 /* LaunchScreen.storyboard */; };
 		C6E31A341ED27D4800DA20F3 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E31A331ED27D4800DA20F3 /* Forecast.swift */; };
 		C6E31A361ED2D2CF00DA20F3 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E31A351ED2D2CF00DA20F3 /* WeatherCell.swift */; };
+		C6E31A381ED41A5000DA20F3 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E31A371ED41A5000DA20F3 /* Location.swift */; };
 		E4DB24A4D25262C8B014668E /* Pods_iWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E4C4B0E32985676673B76E /* Pods_iWeather.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		C653EB6B1ECF9E6D00E45157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6E31A331ED27D4800DA20F3 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		C6E31A351ED2D2CF00DA20F3 /* WeatherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		C6E31A371ED41A5000DA20F3 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				C6435D1C1ED21DF900AA4D1C /* CurrentWeather.swift */,
 				C6E31A331ED27D4800DA20F3 /* Forecast.swift */,
 				C6E31A351ED2D2CF00DA20F3 /* WeatherCell.swift */,
+				C6E31A371ED41A5000DA20F3 /* Location.swift */,
 			);
 			path = iWeather;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 			files = (
 				C653EB621ECF9E6D00E45157 /* WeatherVC.swift in Sources */,
 				C6435D1D1ED21DF900AA4D1C /* CurrentWeather.swift in Sources */,
+				C6E31A381ED41A5000DA20F3 /* Location.swift in Sources */,
 				C6435D1B1ED164D000AA4D1C /* Config.swift in Sources */,
 				C6435D191ED04CF700AA4D1C /* WeatherData.swift in Sources */,
 				C6E31A341ED27D4800DA20F3 /* Forecast.swift in Sources */,

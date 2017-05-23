@@ -9,8 +9,9 @@
 import UIKit
 import Alamofire
 import EasyAnimation
+import CoreLocation
 
-class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate {
 
     
     @IBOutlet weak var todayDateLbl:UILabel!
@@ -30,6 +31,8 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var launchScreenLbl: UILabel!
     @IBOutlet weak var launchScreenBG: UIView!
     
+    let locationManager = CLLocationManager()
+    var currentLocation:CLLocation!
     
     var currentWeather:CurrentWeather!
     var forecast:Forecast!
@@ -42,24 +45,47 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.delegate = self
         tableView.dataSource = self
         
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startMonitoringSignificantLocationChanges()
+        
         //forecast = Forecast()
         currentWeather = CurrentWeather()
-        currentWeather.downloadWeatherDetails {
-            self.downloadForecastData {
-                self.updateMainUI()
-                
-                UIView.animate(withDuration: 0.3, animations: {
-                    self.launchScreenBG.alpha = 0
-                })
-
-            }
-            
-        }
         
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        locationAuthStatus()
+    }
+    
+    func locationAuthStatus() {
+        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
+            currentLocation = locationManager.location
+            Location.sharedInstance.lat = currentLocation.coordinate.latitude
+            Location.sharedInstance.lng = currentLocation.coordinate.longitude
+            currentWeather.downloadWeatherDetails {
+                self.downloadForecastData {
+                    self.updateMainUI()
+                    
+                    UIView.animate(withDuration: 0.3, animations: {
+                        self.launchScreenBG.alpha = 0
+                    })
+                    
+                }
+                
+            }
+            print(Location.sharedInstance.lat, Location.sharedInstance.lng)
+        }
+        else {
+            locationManager.requestWhenInUseAuthorization()
+            locationAuthStatus()
+        }
+    }
+    
     func downloadForecastData(completed: @escaping DownloadComplete) {
-        let forecastURL = URL(string: parseForecastURL(lat: "29.7630556", lng: "-95.3630556"))
+        let forecastURL = URL(string: parseForecastURL(lat: "\(Location.sharedInstance.lat!)", lng: "\(Location.sharedInstance.lng!)"))
         Alamofire.request(forecastURL!).responseJSON {
             response in
             let result = response.result

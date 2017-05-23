@@ -50,7 +50,7 @@ class CurrentWeather {
     }
     
     func downloadWeatherDetails(completed: @escaping DownloadComplete) {
-        let currentWeatherURL = URL(string: parseWeatherURL(lat: "29.7630556", lng: "-95.3630556"))!
+        let currentWeatherURL = URL(string: parseWeatherURL(lat: "\(Location.sharedInstance.lat!)", lng: "\(Location.sharedInstance.lng!)"))!
         Alamofire.request(currentWeatherURL).responseJSON {
             response in
             let result = response.result
