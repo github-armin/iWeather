@@ -32,17 +32,17 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80.3°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLx-Nh-UAv">
-                                        <rect key="frame" x="81" y="81" width="213" height="88"/>
+                                        <rect key="frame" x="112.5" y="81" width="150" height="88"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="88" id="bbi-47-cfF"/>
-                                            <constraint firstAttribute="width" constant="213" id="vl4-V2-W9c"/>
+                                            <constraint firstAttribute="width" constant="150" id="vl4-V2-W9c"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="64"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XYF-M1-NaS">
-                                        <rect key="frame" x="301.5" y="100" width="50" height="50"/>
+                                        <rect key="frame" x="270.5" y="100" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="6rd-xF-FCa"/>
                                             <constraint firstAttribute="height" constant="50" id="xpx-0Y-n20"/>
@@ -70,10 +70,10 @@
                                     <constraint firstItem="Hsv-ca-YHd" firstAttribute="leading" secondItem="cod-ip-SlE" secondAttribute="leading" constant="8" id="1F4-kY-R3f"/>
                                     <constraint firstItem="VLx-Nh-UAv" firstAttribute="centerY" secondItem="cod-ip-SlE" secondAttribute="centerY" id="3sm-CS-HG4"/>
                                     <constraint firstAttribute="trailing" secondItem="Hsv-ca-YHd" secondAttribute="trailing" constant="8" id="5FU-Sq-r1P"/>
+                                    <constraint firstItem="XYF-M1-NaS" firstAttribute="leading" secondItem="VLx-Nh-UAv" secondAttribute="trailing" constant="8" id="8E2-oV-lx3"/>
                                     <constraint firstItem="XYF-M1-NaS" firstAttribute="centerY" secondItem="cod-ip-SlE" secondAttribute="centerY" id="DAU-7P-jDa"/>
                                     <constraint firstAttribute="trailing" secondItem="m0O-JF-rYj" secondAttribute="trailing" constant="8" id="MVK-CV-H69"/>
                                     <constraint firstAttribute="height" constant="250" id="OIK-Fo-tN7"/>
-                                    <constraint firstItem="XYF-M1-NaS" firstAttribute="leading" secondItem="VLx-Nh-UAv" secondAttribute="trailing" constant="8" id="QEb-YU-ygw"/>
                                     <constraint firstItem="VLx-Nh-UAv" firstAttribute="centerX" secondItem="cod-ip-SlE" secondAttribute="centerX" id="Vrf-QR-q8M"/>
                                     <constraint firstItem="ehp-Ls-8nR" firstAttribute="top" secondItem="VLx-Nh-UAv" secondAttribute="bottom" constant="-11" id="dp6-eY-5Gf"/>
                                     <constraint firstItem="ehp-Ls-8nR" firstAttribute="centerX" secondItem="cod-ip-SlE" secondAttribute="centerX" id="eHg-R1-D5O"/>
